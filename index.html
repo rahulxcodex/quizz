@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz for You 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h2 id="question-text">Question will appear here</h2>
+        <div id="options-container">
+            <button class="option" onclick="checkAnswer(0)">Option 1</button>
+            <button class="option" onclick="checkAnswer(1)">Option 2</button>
+            <button class="option" onclick="checkAnswer(2)">Option 3</button>
+            <button class="option" onclick="checkAnswer(3)">Option 4</button>
+        </div>
+    </div>
+    <div id="wrong-answer-container" style="display: none;">
+        <h2>Oops! Wrong Answer!</h2>
+        <p>Don't worry, try again! 😊</p>
+        <button onclick="nextQuestion()">Next Question</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

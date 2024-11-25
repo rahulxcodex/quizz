@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Special Letter to You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .letter-container {
+            background-color: #fff8dc;
+            border: 2px solid #ff6347;
+            width: 60%;
+            padding: 40px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .hidden-message {
+            display: none;
+            font-size: 22px;
+            color: #ff6347;
+            margin-top: 30px;
+        }
+
+        .message-visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="letter-container" onclick="revealLetter()">
+        <h2>Click to Open Your Surprise Letter</h2>
+        <p>💌</p>
+        <div id="hidden-letter" class="hidden-message">
+            <h3>My Dearest Love,</h3>
+            <p>Congratulations on completing the quiz! 💖</p>
+            <p>I hope you enjoyed it. I tried my best to make you smile after you see it. Hope this really brought a smile to you</p>
+            <p>You mean everything to me Ayushiii and hurting you breaks me too. I never want to make you go through anything. I can't change anything in past but I can make present better. So its something I tried. IK its not much but I would keep on trying Ayushiiii.</p>
+            <p>With all my love,</p>
+            <p>Your Gillu 💕</p>
+        </div>
+    </div>
+
+    <script>
+        function revealLetter() {
+            const hiddenLetter = document.getElementById("hidden-letter");
+            hiddenLetter.classList.toggle("message-visible");
+        }
+    </script>
+</body>
+</html>
+
